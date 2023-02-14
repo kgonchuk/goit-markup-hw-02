@@ -1,3 +1,78 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --accent: #e7e9fc;
+  --subtlr-text: #8e8f99;
+  --light: #f4f4fd;
+  --button-active: #404bbf;
+  --white-texcolor: #ffffff;
+  --modal-bg: #fcfcfc;
+  --timing-funcion: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .body {
-  background-color: black;
+  font-family: Roboto, sans-serif;
+  color: var(--dark);
+  background-color: var(--white-texcolor);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+adress {
+  font-style: normal;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.button-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7e9fc;
+  letter-spacing: 0.02em;
 }
