@@ -11,68 +11,137 @@
   --modal-bg: #fcfcfc;
   --timing-funcion: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.body {
+body {
   font-family: Roboto, sans-serif;
   color: var(--dark);
   background-color: var(--white-texcolor);
+  font-weight: 400;
   font-size: 16px;
+line-height: 1.2;
   letter-spacing: 0.02em;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 p {
-  margin: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+ 
+
+/* -----Header----- */
+
+.logo{
+  font-family: Raleway, sans-serif;
+  color: var(--dark);
+  letter-spacing: 0.03em;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.3;
 }
 
-adress {
-  font-style: normal;
+.web {
+  color: var(--primary-brand);
 }
-button {
-  display: block;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-}
+.header-link{
+font-weight: 500;
+line-height: 1.5;
+text-decoration: none;
+ }
 
-ul {
+ .header-item :hover, 
+ .header-item :focus {
+  color: var(--primary-brand);
+ }
+  
+.header-contacts {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  font-weight: 400;
+line-height: 1.5;
+font-style: normal;
+color: var(--dark);
 }
-a {
+
+.header-mail{
+  color: var(--dark);
   text-decoration: none;
-  margin: 0;
+}
+
+.header-phone {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.header-contacts :hover, 
+.header-contacts :focus {
+ color: var(--primary-brand);
+}
+
+/* Hero */
+
+.hero-item {
+  color: var(--white-texcolor);
+  background-color: var(--subtlr-text);
+font-weight: 700;
+font-size: 56px;
+line-height: 1.1;
+text-align: center;
+}
+
+.button{
+  font-family: inherit;
+  color: var(--accent);
+  background-color:var(--primary-brand)
+  
+}
+
+.hero-item .button :hover 
+.hero-item .button :focus{
+ color: var(--button-active);
+}
+/* Section 1 */
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-.container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.list{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
 }
 
-.button-item {
+.item{
+  font-weight: 400;
+line-height: 1.5;
+color: var(--text);
+}
+
+/* Section work */
+
+.title{
+  text-align: center;
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11
+
+}
+.li{
+  list-style: none;
+ }
+
+ /* Section 3 team */
+ .name{
   font-weight: 500;
-  font-size: 16px;
+font-size: 20px;
+line-height: 1.2
+ }
+
+.position{
   line-height: 1.5;
-  color: #ffffff;
-  letter-spacing: 0.04em;
+  color: var(--text);
 }
 
-.subtitle {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #e7e9fc;
-  letter-spacing: 0.02em;
+.footer-title{
+  color: var(--accent);
 }
