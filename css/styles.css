@@ -15,85 +15,104 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--dark);
   background-color: var(--white-texcolor);
-  font-weight: 400;
-  font-size: 16px;
-line-height: 1.2;
-  letter-spacing: 0.02em;
+  
 }
  
 
 /* -----Header----- */
 
-.logo{
-  font-family: Raleway, sans-serif;
-  color: var(--dark);
+.header{
   letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.header-logo{
+  font-family: 'Raleway';
 font-weight: 800;
 font-size: 18px;
-line-height: 1.3;
+line-height: 1.33;
+display: flex;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 }
 
-.web {
+.header-logo-web {
+  font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+display: flex;
+letter-spacing: 0.03em;
+text-transform: uppercase;
   color: var(--primary-brand);
 }
-.header-link{
-font-weight: 500;
-line-height: 1.5;
+
+.header-nav{
+    font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 text-decoration: none;
  }
 
+ 
+ .link{
+  text-decoration: none;
+  color: var(--text);
+ }
+
+ 
  .header-item :hover, 
  .header-item :focus {
   color: var(--primary-brand);
  }
   
-.header-contacts {
-  list-style: none;
+.address {
+  font-style: normal;
   font-weight: 400;
+font-size: 16px;
 line-height: 1.5;
-font-style: normal;
-color: var(--dark);
+letter-spacing: 0.02em;
+color: var(--text);
 }
 
-.header-mail{
-  color: var(--dark);
-  text-decoration: none;
-}
 
-.header-phone {
-  color: var(--dark);
-  text-decoration: none;
+.address-item :hover,
+.address-item :focus{
+  color: var(--primary-brand);
 }
-
-.header-contacts :hover, 
-.header-contacts :focus {
- color: var(--primary-brand);
-}
-
 /* Hero */
 
 .hero-item {
   color: var(--white-texcolor);
-  background-color: var(--subtlr-text);
+  background-color:var(--dark);
 font-weight: 700;
 font-size: 56px;
 line-height: 1.1;
-text-align: center;
+letter-spacing: 0.02em;
 }
 
-.button{
+.button-btn{
   font-family: inherit;
   color: var(--accent);
-  background-color:var(--primary-brand)
-  
+  background-color:var(--primary-brand);
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em; 
 }
 
-.hero-item .button :hover 
-.hero-item .button :focus{
- color: var(--button-active);
+.button-btn :hover,
+.button-btn :focus{
+  color: var(--dark);
 }
-/* Section 1 */
-.visually-hidden{
+
+
+/* Section Principle */
+
+.principle-visually-hidden{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -105,32 +124,39 @@ text-align: center;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .list{
-font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
+letter-spacing: 0.02em;
+font-weight: 500;
 }
 
 .item{
   font-weight: 400;
+font-size: 16px;
 line-height: 1.5;
-color: var(--text);
+letter-spacing: 0.02em;
+color:var(--text);
+}
+
+.principle-list, .work-list, .team-list, .address-list, .header-list{
+  list-style: none;
 }
 
 /* Section work */
 
-.title{
-  text-align: center;
-  font-weight: 700;
+.work-caption, .team-caption{
+font-weight: 700;
 font-size: 36px;
-line-height: 1.11
-
+line-height: 1.11;
 }
+
 .li{
   list-style: none;
  }
 
- /* Section 3 team */
+ /* Section Our team */
  .name{
   font-weight: 500;
 font-size: 20px;
@@ -138,10 +164,25 @@ line-height: 1.2
  }
 
 .position{
-  line-height: 1.5;
-  color: var(--text);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+   color: var(--text);
 }
 
-.footer-title{
+/* Footer */
+
+.footer-text{
   color: var(--accent);
+  background-color: var(--dark);
+}
+
+/* Portfolio */
+/* Button */
+
+.li .button{
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color:var(--white-texcolor)
 }
