@@ -36,6 +36,7 @@ line-height: 1.33;
 display: flex;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+
 }
 
 .header-logo-web {
@@ -94,7 +95,7 @@ line-height: 1.1;
 letter-spacing: 0.02em;
 }
 
-.button-btn{
+.btn-btn{
   font-family: inherit;
   color: var(--accent);
   background-color:var(--primary-brand);
@@ -102,11 +103,7 @@ letter-spacing: 0.02em;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em; 
-}
-
-.button-btn :hover,
-.button-btn :focus{
-  color: var(--dark);
+cursor: pointer;
 }
 
 
@@ -173,25 +170,68 @@ letter-spacing: 0.02em;
 
 /* Footer */
 
+.footer{
+  background-color: var(--dark);
+}
+
+.footer-logo{
+  font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+list-style: none;
+display: flex;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+background-color: var(--dark)
+
+}
+
+.footer-logo-web {
+  font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+display: flex;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  color: var(--primary-brand);
+  
+}
+
 .footer-text{
   color: var(--accent);
   background-color: var(--dark);
 }
 
 /* Portfolio */
+
 /* Button */
 
 .btn{
-  font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
+  font-family: 'Roboto';
+font-style: normal;
+    font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+    display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
 background-color:var(--light);
 color: var(--primary-brand);
 border: 1px solid #E7E9FC;
 border-radius: 4px;
+cursor: pointer;
+}
+
+.filters-list :hover,
+.filters-list :focus{
+  color: var(--accent);
 
 }
+
+
 .button-item{
   list-style: none;
 }
@@ -207,4 +247,22 @@ border-radius: 4px;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+ }
+
+ .project-title{
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+ }
+
+ .project-text{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--text);
+ }
+ .project-item{
+  list-style: none;
  }
