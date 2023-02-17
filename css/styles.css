@@ -16,6 +16,7 @@ body {
   color: var(--dark);
   background-color: var(--white-texcolor);
   
+  
 }
  
 
@@ -36,6 +37,9 @@ line-height: 1.33;
 display: flex;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+list-style: none;
+  text-decoration: none;
+  color: var(--dark);
 
 }
 
@@ -48,6 +52,7 @@ display: flex;
 letter-spacing: 0.03em;
 text-transform: uppercase;
   color: var(--primary-brand);
+  
 }
 
 .header-nav{
@@ -86,17 +91,20 @@ color: var(--text);
 }
 /* Hero */
 
+.hero-title{
+  background-color: var(--dark);
+}
 .hero-item {
   color: var(--white-texcolor);
-  background-color:var(--dark);
-font-weight: 700;
+  font-weight: 700;
 font-size: 56px;
 line-height: 1.1;
 letter-spacing: 0.02em;
+
 }
 
-.btn-btn{
-  font-family: inherit;
+.button {
+  font-family:inherit;
   color: var(--accent);
   background-color:var(--primary-brand);
   font-weight: 500;
@@ -104,7 +112,15 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em; 
 cursor: pointer;
+
 }
+.btn :hover,
+.btn :focus{
+  color: var(--button-active);
+  background-color:var(--accent);
+}
+
+
 
 
 /* Section Principle */
@@ -130,7 +146,6 @@ font-weight: 500;
 }
 
 .item{
-  font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -161,7 +176,6 @@ line-height: 1.2
  }
 
 .position{
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -183,7 +197,9 @@ list-style: none;
 display: flex;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-background-color: var(--dark)
+color: var(--white-texcolor);
+list-style: none;
+  text-decoration: none;
 
 }
 
@@ -214,10 +230,7 @@ font-style: normal;
     font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-    display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
+     letter-spacing: 0.04em;
 background-color:var(--light);
 color: var(--primary-brand);
 border: 1px solid #E7E9FC;
@@ -257,8 +270,7 @@ letter-spacing: 0.02em;
  }
 
  .project-text{
-  font-weight: 400;
-font-size: 16px;
+  font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--text);
