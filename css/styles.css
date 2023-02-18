@@ -112,12 +112,13 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em; 
 cursor: pointer;
+border-radius: 4px;
 
 }
-.btn :hover,
-.btn :focus{
-  color: var(--button-active);
-  background-color:var(--accent);
+.button:hover,
+.button:focus{
+  color: var(--accent);
+  background-color:var(--button-active)
 }
 
 
@@ -138,22 +139,18 @@ cursor: pointer;
   overflow: hidden;
 }
 
-.list{
+.principle-title{
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 font-weight: 500;
 }
 
-.item{
+.desc{
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--text);
-}
-
-.principle-list, .work-list, .team-list, .address-list, .header-list{
-  list-style: none;
 }
 
 /* Section work */
@@ -162,17 +159,18 @@ color:var(--text);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
+letter-spacing: 0.02em;
 }
 
-.li{
-  list-style: none;
- }
-
  /* Section Our team */
+ .team{
+  background-color:#F4F4FD;
+ }
  .name{
   font-weight: 500;
 font-size: 20px;
-line-height: 1.2
+line-height: 1.2;
+letter-spacing: 0.02em;
  }
 
 .position{
@@ -182,6 +180,9 @@ letter-spacing: 0.02em;
    color: var(--text);
 }
 
+.list{
+  list-style: none;
+}
 /* Footer */
 
 .footer{
@@ -224,26 +225,26 @@ text-transform: uppercase;
 
 /* Button */
 
-.btn{
+.portfolio-btn{
   font-family: 'Roboto';
 font-style: normal;
     font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
      letter-spacing: 0.04em;
-background-color:var(--light);
+background-color:var(--accent);
 color: var(--primary-brand);
-border: 1px solid #E7E9FC;
+border: 1px solid var(--accent);
 border-radius: 4px;
 cursor: pointer;
 }
 
-.filters-list :hover,
-.filters-list :focus{
-  color: var(--accent);
-
+.portfolio-btn:hover,
+.portfolio-btn:focus{
+  background-color: var(--button-active);
+  color: var(--accent);  
+  border-color: transparent;
 }
-
 
 .button-item{
   list-style: none;
